@@ -241,6 +241,8 @@ div#nav {
     
     
     text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+
+ 
     
     
     
@@ -301,6 +303,8 @@ ul {
     
     list-style: none;
 
+
+
     
     
     
@@ -309,8 +313,15 @@ ul {
 
 li{
     margin: 15px;
+
+
     
 }
+
+ul :hover {
+    color: #49FF18;
+}
+
 
 
 
