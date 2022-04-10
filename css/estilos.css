@@ -1,0 +1,410 @@
+  * {
+    
+        text-decoration:none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        
+        
+        
+        
+    }
+
+
+    /* Diseño mobile */
+
+@media screen and (max-width: 480px) {
+    /*     index grid container */
+
+    .grid_index {
+        display:grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "container1index"
+        "container2index"
+        "container3index"
+        "container4index"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        height: 100vh;
+        grid-column-gap: 1px;
+        grid-row-gap: 2px; 
+
+
+    }
+
+    div#logo {
+        grid-area: logo;
+        /* border: 1px solid black; */
+        background-image: url(../imagenes/fondo3.png) ;
+    }
+    div#nav {
+        grid-area: nav;
+        border: 1px solid black;
+        font-weight: bold;
+        display: flex;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: black;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        font-size: 1em;
+
+        
+    }
+    div#container1index {
+        grid-area: container1index;
+        /* border: 1px solid black; */
+        background-image: url(../imagenes/fondo3.png) ;
+
+    }
+    div#container2index {
+        grid-area: container2index;
+        /* border: 1px solid black; */
+    }
+    div#container3index {
+        grid-area: container3index;
+        /* border: 1px solid black; */
+    }
+    div#container4index {
+        grid-area: container4index;
+        /* border: 1px solid black; */
+        background-image: url(../imagenes/fondo3.png) ;
+    }
+    div#footer {
+        grid-area: footer;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen_logo {
+        width:100%
+    }
+
+    .pantalones{
+        width:100%
+    }
+
+    .portadas{
+        width:100%
+    }
+
+    .imagen_sociales {
+        width: 100%;
+        max-width: 35px;
+    }
+    ul {
+        list-style: none;
+        
+    }
+
+
+
+
+   /* ropa mobile */
+    .grid_ropa{
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "titulo1"
+        "container1ropa"
+        "container2ropa"
+        "container3ropa"
+        "container4ropa"
+        "titulo2"
+        "container5ropa"
+        "container6ropa"
+        "container7ropa"
+        "container8ropa"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        height: 100vh;
+        grid-column-gap: 1px;
+        grid-row-gap: 2px; 
+
+    }
+
+    div#logo {
+        grid-area: logo;
+        /* border: 1px solid black; */
+    }
+    div#nav {
+        grid-area: nav;
+        /* border: 1px solid black; */
+    }
+
+    div#titulo1 {
+       grid-area: titulo1;
+       /* border: 1px solid black; */
+       background-image: url(../imagenes/fondo3.png) ;
+       display:flex;
+       justify-content: center;
+       text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 2px 2px 2px rgba(206,89,55,0);
+    }
+    div#container1ropa {
+        grid-area: container1ropa;
+        /* border: 1px solid black; */
+    }
+    div#container2ropa {
+        grid-area: container2ropa;
+        /* border: 1px solid black; */
+    }
+    div#container3ropa {
+        grid-area: container3ropa;
+        /* border: 1px solid black; */
+    }
+    div#container4ropa {
+        grid-area: container4ropa;
+        /* border: 1px solid black; */
+    }
+
+
+    div#titulo2 {
+        grid-area: titulo2;
+        /* border: 1px solid black; */
+        background-image: url(../imagenes/fondo3.png) ;
+        display:flex;
+        justify-content: center;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 2px 2px 2px rgba(206,89,55,0);
+     }
+
+     div#container5ropa {
+        grid-area: container5ropa;
+        /* border: 1px solid black; */
+    }
+    div#container6ropa {
+        grid-area: container6ropa;
+        /* border: 1px solid black; */
+    }
+    div#container7ropa {
+        grid-area: container7ropa;
+        /* border: 1px solid black; */
+    }
+    div#container8ropa {
+        grid-area: container8ropa;
+        /* border: 1px solid black; */
+    } 
+
+    .pantalones2 {
+       width: 100%
+    }
+    .camperas {
+        width:100%
+    }
+
+
+
+}
+
+
+/* diseño desktop */
+@media screen and (min-width: 481px) {
+/*     index desktop */
+.grid_index {
+    display:grid;
+    grid-template-areas: 
+    "logo logo nav nav"
+    "container1index container2index container3index container4index"
+    "footer footer footer footer"
+    ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    
+    height: 100vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+
+
+
+}
+
+
+div#logo {
+    grid-area: logo;
+    /* border: 1px solid black; */
+    background: black;
+}
+div#nav {
+    grid-area: nav;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    background: black;
+    text-transform: uppercase;
+    
+    
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+    
+    
+    
+    
+}
+div#container1index {
+    grid-area: container1index;
+    /* border: 1px solid black; */
+    background-image: url(../imagenes/fondo3.png) ;
+}
+div#container2index {
+    grid-area: container2index;
+    /* border: 1px solid black; */
+    background-image: url(../imagenes/fondo3.png) ;
+}
+div#container3index {
+    grid-area: container3index;
+    /* border: 1px solid black; */
+    background-image: url(../imagenes/fondo3.png) ;
+}
+div#container4index {
+    grid-area: container4index;
+    /* border: 1px solid black; */
+    background-image: url(../imagenes/fondo3.png) ;
+}
+div#footer {
+    grid-area: footer;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: black;
+}
+
+.imagen_logo {
+    width:100%
+}
+
+.pantalones{
+    width:100%
+}
+
+.portadas{
+    width:100%
+}
+
+.imagen_sociales {
+    width: 100%;
+    max-width: 35px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+
+    
+    list-style: none;
+
+    
+    
+    
+    
+}
+
+li{
+    margin: 15px;
+    
+}
+
+
+
+
+/* ropa desktop */
+.grid_ropa{
+    display: grid;
+    grid-template-areas: 
+    "logo logo nav nav"
+    "titulo1 titulo1 titulo1 titulo1"
+    "container1ropa container2ropa container3ropa container4ropa"
+    "titulo2 titulo2 titulo2 titulo2"
+    "container5ropa container6ropa container7ropa container8ropa"
+    "footer footer footer footer"
+    ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    height: 100vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+
+}
+
+div#logo {
+    grid-area: logo;
+    /* border: 1px solid black; */
+}
+div#nav {
+    grid-area: nav;
+    /* border: 1px solid black; */
+}
+
+div#titulo1 {
+   grid-area: titulo1;
+   /* border: 1px solid black; */
+   background: black;
+   text-transform: uppercase;
+   
+   text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+   display: flex;
+   justify-content: center;
+}
+div#container1ropa {
+    grid-area: container1ropa;
+    /* border: 1px solid black; */
+}
+div#container2ropa {
+    grid-area: container2ropa;
+    /* border: 1px solid black; */
+}
+div#container3ropa {
+    grid-area: container3ropa;
+    /* border: 1px solid black; */
+}
+div#container4ropa {
+    grid-area: container4ropa;
+    /* border: 1px solid black; */
+}
+
+
+div#titulo2 {
+    grid-area: titulo2;
+    /* border: 1px solid black; */
+    background: black;
+    text-transform: uppercase;
+    
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+    display: flex;
+    justify-content: center;
+ }
+
+ div#container5ropa {
+    grid-area: container5ropa;
+    /* border: 1px solid black; */
+}
+div#container6ropa {
+    grid-area: container6ropa;
+    /* border: 1px solid black; */
+}
+div#container7ropa {
+    grid-area: container7ropa;
+    /* border: 1px solid black; */
+}
+div#container8ropa {
+    grid-area: container8ropa;
+    /* border: 1px solid black; */
+} 
+
+.pantalones2 {
+   width: 100%
+}
+.camperas {
+    width:100%
+}
+
+}
