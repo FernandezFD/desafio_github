@@ -229,7 +229,8 @@
 div#logo {
     grid-area: logo;
     /* border: 1px solid black; */
-    background: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,82,255,1) 49%, rgba(0,0,0,1) 100%);
 }
 div#nav {
     grid-area: nav;
@@ -274,7 +275,8 @@ div#footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,82,255,1) 49%, rgba(0,0,0,1) 100%);
 }
 
 .imagen_logo {
